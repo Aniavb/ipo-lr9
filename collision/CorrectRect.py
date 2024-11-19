@@ -1,5 +1,6 @@
 def isCorrectRect(rec):
-    if rec[0][0] <= rec[1][0] and rec[0][1] <= rec[1][1]:
-        return True
-    else:
-        return False
+    for i in rec:
+        if i[0][0] <= i[1][0] and i[0][1] <= i[1][1]:
+            return True
+        else:
+            return False
