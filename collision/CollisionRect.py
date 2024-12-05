@@ -1,6 +1,4 @@
-from collision.CorrectRect import isCorrectRect
-class RectCorrectError(Exception):
-    pass
+from collision.CorrectRect import isCorrectRect, RectCorrectError
 
 def isCollisionRect(rectangles):
     
@@ -10,7 +8,7 @@ def isCollisionRect(rectangles):
         print(e)
         return False
     n = len(rectangles)
-    
+
     for i in range(n):
         for j in range(i + 1, n):
             # Первый прямоугольник
